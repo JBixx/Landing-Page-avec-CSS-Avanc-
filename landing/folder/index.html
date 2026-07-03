@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseNet — Surveillance réseau en temps réel</title>
+  <meta name="description" content="PulseNet détecte, alerte et documente les incidents de votre infrastructure réseau avant vos utilisateurs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        PulseNet
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#avis">Avis clients</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#tarifs" class="btn btn-ghost">Se connecter</a>
+        <a href="#cta" class="btn btn-primary">Essai gratuit</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Monitoring réseau nouvelle génération</p>
+          <h1>Surveillez votre infrastructure<br>avant qu'elle ne vous surveille.</h1>
+          <p class="hero-lead">
+            PulseNet observe vos routeurs, serveurs et liaisons VPN 24h/24, détecte
+            les anomalies en quelques secondes et prévient votre équipe avant que
+            vos utilisateurs ne s'en aperçoivent.
+          </p>
+          <div class="hero-actions">
+            <a href="#tarifs" class="btn btn-primary btn-lg">Commencer gratuitement</a>
+            <a href="#fonctionnalites" class="btn btn-outline btn-lg">Voir comment ça marche</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="monitor-card">
+            <div class="monitor-head">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="monitor-title">core-router-01 · statut réseau</span>
+            </div>
+
+            <svg class="pulse-graph" viewBox="0 0 460 140" role="img" aria-label="Graphique de latence réseau en direct">
+              <defs>
+                <linearGradient id="pulseFade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--primary-color)" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="var(--primary-color)" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g class="grid-lines">
+                <line x1="0" y1="35" x2="460" y2="35"></line>
+                <line x1="0" y1="70" x2="460" y2="70"></line>
+                <line x1="0" y1="105" x2="460" y2="105"></line>
+              </g>
+              <path class="pulse-fill" d="M0,90 L40,90 L60,40 L80,110 L100,90 L150,90 L170,60 L190,90 L260,90 L280,20 L300,90 L460,90 L460,140 L0,140 Z" fill="url(#pulseFade)"></path>
+              <path class="pulse-line" d="M0,90 L40,90 L60,40 L80,110 L100,90 L150,90 L170,60 L190,90 L260,90 L280,20 L300,90 L460,90"></path>
+              <circle class="pulse-dot" cx="460" cy="90" r="4"></circle>
+            </svg>
+
+            <div class="monitor-stats">
+              <div class="stat">
+                <span class="stat-value">99.98<span class="stat-unit">%</span></span>
+                <span class="stat-label">Disponibilité</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">12<span class="stat-unit">ms</span></span>
+                <span class="stat-label">Latence moy.</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value stat-good">0</span>
+                <span class="stat-label">Incident actif</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Fonctionnalités (3 colonnes) -->
+    <section class="features" id="fonctionnalites">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Fonctionnalités</p>
+          <h2>Tout ce qu'il faut pour dormir tranquille</h2>
+          <p class="section-lead">Trois piliers pour garder une longueur d'avance sur les pannes.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="3.5" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="2" opacity="0.55"/><circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="2" opacity="0.25"/></svg>
+            </span>
+            <h3>Détection en temps réel</h3>
+            <p>Sondes actives sur chaque nœud, du routeur de bordure au serveur applicatif, avec un cycle de vérification descendant jusqu'à 10 secondes.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 6C14.5 6 10 10.5 10 16v6l-3 5h26l-3-5v-6c0-5.5-4.5-10-10-10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16.5 30a3.5 3.5 0 0 0 7 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Alertes intelligentes</h3>
+            <p>Seuils adaptatifs et regroupement d'incidents pour ne recevoir que les alertes qui comptent, par e-mail, SMS ou Slack.</p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M8 32V18M20 32V8M32 32V22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M6 32h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Rapports détaillés</h3>
+            <p>Historique de disponibilité, temps moyen de résolution et export PDF prêt à présenter en comité de direction.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Témoignages -->
+    <section class="testimonials" id="avis">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Avis clients</p>
+          <h2>Des équipes réseau qui ont repris le contrôle</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-quote">« On a détecté une boucle de spanning-tree en 40 secondes au lieu de la découvrir le lendemain par un ticket client. »</p>
+            <div class="testimonial-author">
+              <span class="avatar" style="--avatar-color: var(--primary-color)">EM</span>
+              <div>
+                <span class="author-name">Élise Mabiala</span>
+                <span class="author-role">Responsable infrastructure, NOVACOM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">« Le tableau de bord est enfin lisible pour la direction. On montre nos chiffres de disponibilité sans les traduire. »</p>
+            <div class="testimonial-author">
+              <span class="avatar" style="--avatar-color: var(--accent-blue)">TB</span>
+              <div>
+                <span class="author-name">Thierry Bokamba</span>
+                <span class="author-role">Administrateur systèmes, Atlas Data</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-quote">« Les alertes groupées nous ont fait gagner un vrai sommeil. Avant, une panne de switch déclenchait 50 notifications. »</p>
+            <div class="testimonial-author">
+              <span class="avatar" style="--avatar-color: var(--accent-warm)">SN</span>
+              <div>
+                <span class="author-name">Sonia Ngoma</span>
+                <span class="author-role">Ingénieure réseau, Fibraweb</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Tarifs (FCFA) -->
+    <section class="pricing" id="tarifs">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Tarifs</p>
+          <h2>Un plan pour chaque taille d'infrastructure</h2>
+          <p class="section-lead">Prix en francs CFA. Changez de formule à tout moment, sans engagement.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-desc">Pour surveiller un premier périmètre.</p>
+            <p class="plan-price">
+              <span class="price-amount">0</span>
+              <span class="price-currency">FCFA</span>
+              <span class="price-period">/mois</span>
+            </p>
+            <ul class="plan-features">
+              <li>Jusqu'à 5 nœuds surveillés</li>
+              <li>Vérification toutes les 5 minutes</li>
+              <li>Alertes par e-mail</li>
+              <li>Historique 7 jours</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Démarrer gratuitement</a>
+          </article>
+
+          <article class="pricing-card pricing-card-featured">
+            <p class="plan-badge">Le plus choisi</p>
+            <h3 class="plan-name">Pro</h3>
+            <p class="plan-desc">Pour les équipes qui gèrent une infrastructure critique.</p>
+            <p class="plan-price">
+              <span class="price-amount">19&nbsp;500</span>
+              <span class="price-currency">FCFA</span>
+              <span class="price-period">/mois</span>
+            </p>
+            <ul class="plan-features">
+              <li>Jusqu'à 100 nœuds surveillés</li>
+              <li>Vérification toutes les 10 secondes</li>
+              <li>Alertes e-mail, SMS et Slack</li>
+              <li>Historique illimité</li>
+              <li>Rapports PDF automatiques</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block">Essayer 14 jours gratuits</a>
+          </article>
+
+          <article class="pricing-card">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">Pour les infrastructures multi-sites et exigences sur mesure.</p>
+            <p class="plan-price">
+              <span class="price-amount price-amount-sm">Sur devis</span>
+            </p>
+            <ul class="plan-features">
+              <li>Nœuds illimités</li>
+              <li>SLA garanti 99.99&nbsp;%</li>
+              <li>Intégration API et SSO</li>
+              <li>Accompagnement dédié</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Contacter l'équipe</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA -->
+    <section class="cta-banner" id="cta">
+      <div class="container cta-inner">
+        <h2>Prêt à voir vos pannes avant vos utilisateurs&nbsp;?</h2>
+        <p>Installez la première sonde en moins de 5 minutes, sans carte bancaire.</p>
+        <a href="#tarifs" class="btn btn-primary btn-lg">Commencer gratuitement</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          PulseNet
+        </a>
+        <p>La surveillance réseau pensée pour les équipes qui n'ont pas le temps de deviner.</p>
+        <p class="footer-author">Projet réalisé par <strong>HIRWA Jean Baptiste</strong></p>
+      </div>
+
+      <nav class="footer-col" aria-label="Produit">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#avis">Avis clients</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#cta">Commencer</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Ressources">
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="#fonctionnalites">Documentation</a></li>
+          <li><a href="#avis">Témoignages</a></li>
+          <li><a href="#tarifs">Tarification</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Légal">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="#">Confidentialité</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 PulseNet. Tous droits réservés.</p>
+      <p class="footer-credit">Conçu &amp; développé par HIRWA Jean Baptiste — Akieni Academy</p>
+    </div>
+  </footer>
+
+</body>
+</html>
