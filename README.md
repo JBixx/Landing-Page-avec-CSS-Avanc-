@@ -1,4 +1,4 @@
-# PulseNet — Landing Page
+# PulseNet Landing Page
 
 Projet 3.3 de l'Akieni Academy : landing page avec CSS avancé.
 
